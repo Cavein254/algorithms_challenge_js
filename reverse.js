@@ -11,4 +11,4 @@ function ReverseTwo(arr) {
   return arr.split().reduce((str, char) => str = str + char,'' )
 }
 
-console.log("Reverse Two", ReverseTwo(arr));
+console.log("Reverse Two", ReverseTwo(arr))

@@ -1,5 +1,5 @@
 
-function palindrome(str) {
+function palindromeOne(str) {
   let nStr = str.split('');
   let revStr = str.split('').reverse();
   for(let i=0; i < str.length; i++) {
@@ -8,6 +8,14 @@ function palindrome(str) {
     }
   }
   return true;
+}
+
+function palindrome(str) {
+  let nStr = str.split('').reverse().join('');
+  if(nStr === str) {
+    return true;
+  }
+  return false;
 }
 
 console.log(palindrome("abba"));
